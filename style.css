@@ -1,15 +1,47 @@
 .container-fluid {
     padding: none !important;
     margin: none !important;
+    --border-gray: rgb(187, 187, 187);
 }
 
 header {
-    height: 60px;
+    height: 80px;
     width: 100%;
-    background-color: rgb(87, 87, 87);
+    background: linear-gradient(to top, gray, rgb(65, 65, 65));
     margin: none;
+    position: relative;
+    border-bottom: 2px solid var(--border-gray);
+    box-shadow: 0px 0px 5px black;
 }
 
 .jumbo-image {
-    
+    width: 30%;
+    position: absolute;
+    border-radius: 100%;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    border: 2px solid var(--border-gray);
+    box-shadow: 0px 0px 5px black;
+}
+
+.main-image {
+    width: 100%;
+    object-fit: cover;
+    object-position: top left;
+    background-attachment: fixed;
+}
+
+@media screen and (max-width: 1000px) {
+    .jumbo-image {
+        width: 50%;
+    }
+}
+
+.title {
+    height: 60px;
+    width: 100%;
+    background-color: grey;
+    border-top: 2px solid var(--border-gray);
+    box-shadow: 0px 0px 5px black;
 }
