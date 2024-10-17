@@ -1,0 +1,15 @@
+.container-fluid {
+    padding: none !important;
+    margin: none !important;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(87, 87, 87);
+    margin: none;
+}
+
+.jumbo-image {
+    
+}
