@@ -11,9 +11,16 @@ function bigPic() {
   image.style.height = remaining + "px";
 }
 
-// window.addEventListener("scroll", scrollBlur);
-
-// function scrollBlur() {
-//   let image = document.getElementsByClassName("main-image")[0];
-//   image.setAttribute("style", `filter: blur(${scrollY / 100}%);`);
-// }
+let opened = false;
+function open_nav() {
+  let menu = document.getElementsByClassName("mega-menu")[0];
+  if (opened == false) {
+    menu.classList.remove("up");
+    menu.classList.add("down");
+    opened = true;
+  } else if (opened == true) {
+    menu.classList.remove("down");
+    menu.classList.add("up");
+    opened = false;
+  }
+}
