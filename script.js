@@ -7,7 +7,7 @@ function bigPic() {
   let header = document.getElementsByTagName("HEADER")[0];
   let title = document.getElementsByClassName("title")[0];
   let height = window.innerHeight;
-  let remaining = height - header.offsetHeight;
+  let remaining = height - header.offsetHeight - title.offsetHeight;
   image.style.height = remaining + "px";
 }
 
