@@ -3,12 +3,14 @@ window.onload = function startUp() {
 };
 
 function bigPic() {
-  let image = document.getElementsByClassName("main-image")[0];
+  let images = document.getElementsByClassName("main-image");
   let header = document.getElementsByTagName("HEADER")[0];
   let title = document.getElementsByClassName("title")[0];
   let height = window.innerHeight;
   let remaining = height - header.offsetHeight - title.offsetHeight;
-  image.style.height = remaining + "px";
+  for (let i = 0; i < images.length; i++) {
+    images[i].style.height = remaining + "px";
+  }
 }
 
 let opened = false;

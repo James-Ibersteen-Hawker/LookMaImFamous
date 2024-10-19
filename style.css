@@ -17,7 +17,7 @@ header {
     position: relative;
     border-bottom: 2px solid var(--border-gray);
     box-shadow: 0px 0px 5px black;
-    z-index: 2;
+    z-index: 5;
 }
 
 .jumbo-image {
@@ -34,17 +34,25 @@ header {
 
 .main-image {
     width: 100%;
-    background:  url(imgs/zeppelin-before-airship.png);
-    background-size: cover;
-    background-attachment: fixed;
     position: relative;
-    .blurrer {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        backdrop-filter: blur(20px);
-        mask-image: linear-gradient(to bottom, black, black, rgba(0,0,0,0), black);
-    }
+    background-size: cover;
+    z-index: 0;
+}
+
+.one {
+    background: url(imgs/zeppelin-before-airship.png);
+    background-size: cover;
+    background-position: center;
+}
+.two {
+    background: url(imgs/zeppelin-airship.png);
+    background-size: cover;
+    background-position: bottom;
+}
+.three {
+    background: url(imgs/zeppelin-before-desk.jpg);
+    background-size: cover;
+    background-position: top;
 }
 
 @media screen and (max-width: 1000px) {
@@ -72,7 +80,7 @@ header {
     width: 100%;
     position: absolute;
     top: -200px;
-    z-index: 1;
+    z-index: 3;
     box-shadow: 0px 0px 5px black;
     div {
         background-color: rgb(194, 194, 194);
