@@ -152,16 +152,26 @@ animation-fill-mode: forwards;
         top: 30px;
     }
     to {
-        top: -100px;
+        top: -120px;
     }
 }
     
 @keyframes downpic {
     from {
-        top: -100px;
+        top: -120px;
     }
     to {
         top: 30px;
     }
 }
    
+.floatpic {
+    max-width: 400px;
+    aspect-ratio: 1/1.02;
+    object-fit: cover;
+    object-position: top;
+}
+
+.justify {
+    text-align: justify;
+}
