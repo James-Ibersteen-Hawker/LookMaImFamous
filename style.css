@@ -176,7 +176,6 @@ animation-fill-mode: forwards;
 .floatpic {
     width: 400px;
     aspect-ratio: 1/1.02;
-    background-size: 100% 140%;
     background-position: center top;
     transition: 0.2s;
     border-radius: 5px;
@@ -185,8 +184,6 @@ animation-fill-mode: forwards;
 }
 
 .floatpic:hover {
-    background-size: 112% 160%;
-    background-position: center top;
     box-shadow: 0px 0px 100px black inset, 0px 0px 15px black;
     transition: 0.2s;
 }
@@ -207,8 +204,20 @@ animation-fill-mode: forwards;
 
 .picOne {
     background-image: url(imgs/zeppelin.png);
+    background-size: 100% 140%;
+}
+.picOne:hover {
+    background-position: center top;
+    background-size: 112% 160%;
 }
 
 .picTwo {
-    
+    background-size: 120% 100%;
+    background-position: center bottom;
+    background-image: url(imgs/zeppelin-airship.png);
+}
+
+.picTwo:hover {
+    background-position: center bottom;
+    background-size: 140% 120%;
 }
