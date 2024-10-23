@@ -193,7 +193,6 @@ animation-fill-mode: forwards;
 }
 
 .body-main {
-    background: linear-gradient(to bottom, #c9c9c9, #393939);
     font-family: "Merriweather", serif;
     h1 {
         font-family: "Bebas Neue", sans-serif;
@@ -212,12 +211,29 @@ animation-fill-mode: forwards;
 }
 
 .picTwo {
-    background-size: 120% 100%;
-    background-position: center bottom;
+    background-size: 130% 100%;
+    background-position: right center;
     background-image: url(imgs/zeppelin-airship.png);
 }
 
 .picTwo:hover {
-    background-position: center bottom;
-    background-size: 140% 120%;
+    background-position: right center;
+    background-size: 150% 120%;
+}
+
+.parallax {
+    height: 300px;
+}
+
+.col-12.row {
+    background: linear-gradient(to bottom, #c9c9c9, #555555);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: black;
+}
+
+.p1 {
+    background: url(imgs/zeppelin-emerging.jpg);
+    background-attachment: fixed;
+    background-size: cover;
 }
