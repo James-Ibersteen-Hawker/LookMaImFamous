@@ -23,6 +23,7 @@ header {
     width: 100%;
     cursor: pointer;
     background: linear-gradient(to top, gray, rgb(65, 65, 65));
+    filter: brightness(100%);
     margin: none;
     position: relative;
     border-bottom: 2px solid var(--border-gray);
@@ -79,12 +80,14 @@ header:hover {
     background-position: center;
     background-attachment: fixed;
 }
+
 .two {
     background: url(imgs/zeppelin-airship.png);
     background-size: cover;
     background-position: bottom;
     background-attachment: fixed;
 }
+
 .three {
     background: url(imgs/zeppelin-before-desk.jpg);
     background-size: cover;
@@ -239,6 +242,7 @@ animation-fill-mode: forwards;
     background-image: url(imgs/zeppelin.png);
     background-size: 100% 140%;
 }
+
 .picOne:hover {
     background-position: center top;
     background-size: 112% 160%;
@@ -291,4 +295,32 @@ animation-fill-mode: forwards;
     background: url(imgs/zeppelin_over_city.webp);
     background-attachment: fixed;
     background-size: cover;
+}
+
+.p3 {
+    background: url(imgs/zeppelin_flying.webp);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: red;
+    .col-12.row {
+        background: none;
+        box-shadow: none;
+        .col-3 {
+                background-color: rgb(194, 194, 194);
+                transition: 0.2s;
+                padding-left: 30px;
+                padding-right: 30px;
+                height: 60px;
+                line-height: 60px;
+        }
+        .col-3:hover {
+                background-color: gray;
+                transition: 0.2s;
+        }
+    }
 }
