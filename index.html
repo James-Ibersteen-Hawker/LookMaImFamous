@@ -41,7 +41,7 @@
     <!---->
     <!---->
     <div class="container-fluid m-0 p-0">
-      <header onclick="open_nav()">
+      <header onclick="open_nav()" id="top">
         <div class="row">
           <div class="col-3 text-center">Menu</div>
           <div class="col-6"></div>
@@ -73,9 +73,9 @@
         </div>
         <div
           class="col-6 col-md-2 text-center"
-          onclick="linker('#footer'); open_nav()"
+          onclick="linker('#video'); open_nav()"
         >
-          To Bottom
+          Video
         </div>
         <div class="d-block d-md-none col-12 text-center" onclick="open_nav()">
           Close
@@ -215,6 +215,21 @@
           <!--parallax 3 open-->
           <div class="parallax p3" style="z-index: 0"></div>
           <!--parallax 3 close-->
+          <div class="col-12 row p-3 m-0 mainRow" id="video">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/Cwn87xxVtp8?si=tNeogPsDO5qh6kMY&amp;controls=0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <!--parallax 4 open-->
+          <div class="parallax p4" style="z-index: 0; height: 200px"></div>
+          <!--parallax 4 close-->
         </div>
       </main>
       <footer class="row p-0 m-0" id="footer">
@@ -228,7 +243,7 @@
           <div class="col-3 text-center" onclick="linker('#contributions')">
             Contributions
           </div>
-          <div class="col-3 text-center" onclick="linker('#')">To Top</div>
+          <div class="col-3 text-center" onclick="linker('#top')">To Top</div>
         </div>
         <div class="col-12 text-center">
           <div class="everything-else w-80 mx-auto">
