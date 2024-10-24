@@ -301,12 +301,15 @@ animation-fill-mode: forwards;
     background: url(imgs/zeppelin_flying.webp);
     background-attachment: fixed;
     background-size: cover;
+    background-position: top center;
 }
 
 footer {
     width: 100%;
-    height: 200px;
-    background-color: red;
+    height: 120px;
+    background-color: rgb(194, 194, 194);
+    box-sizing: border-box;
+    margin: none;
     .col-12.row {
         background: none;
         box-shadow: none;
@@ -317,10 +320,24 @@ footer {
                 padding-right: 30px;
                 height: 60px;
                 line-height: 60px;
+                font-family: "Raleway", sans-serif;
         }
         .col-3:hover {
                 background-color: gray;
                 transition: 0.2s;
         }
     }
+    .everything-else {
+        height: 60px;
+        border-top: 2px solid black;
+        line-height: 60px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 13px;
+    }
+}
+
+.footer-bottom {
+    height: 20px;
+    width: 100%;
+    background: rgb(33, 20, 20);
 }
