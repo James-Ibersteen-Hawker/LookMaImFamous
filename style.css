@@ -19,6 +19,7 @@ body {
 }
 
 header {
+    position: relative;
     height: 80px;
     width: 100%;
     cursor: pointer;
@@ -102,6 +103,7 @@ header:hover {
 }
 
 .title {
+    position: relative;
     min-height: 60px;
     width: 100%;
     font-family: Megrath, serif;
@@ -197,13 +199,13 @@ animation-fill-mode: forwards;
         top: 30px;
     }
     to {
-        top: -120px;
+        top: -200px;
     }
 }
     
 @keyframes downpic {
     from {
-        top: -120px;
+        top: -200px;
     }
     to {
         top: 30px;
@@ -234,12 +236,15 @@ animation-fill-mode: forwards;
 }
 
 .parallax {
+    position: relative;
     height: 300px;
     z-index: 0;
+    filter: brightness(50%);
 }
 
 .mainRow {
-    background: linear-gradient(to bottom, #c9c9c9, #555555);
+    position: relative;
+    background: linear-gradient(to bottom, #c9c9c9, #999999);
     padding-top: 20px;
     padding-bottom: 20px;
     color: black;
@@ -257,31 +262,44 @@ animation-fill-mode: forwards;
     background: url(imgs/GrafZeppelin\ 002.jpg);
     background-attachment: fixed;
     background-size: cover;
+    background-position: center;
 }
 
 .p3 {
     background: url(imgs/zeppelin_flying.webp);
     background-attachment: fixed;
     background-size: cover;
-    background-position: top center;
+    background-position: top;
+}
+
+.p4 {
+    background: url(imgs/zeppelin_moored.jpg);
+    background-attachment: fixed;
+    /* background-size: auto 700px; */
+    background-size: cover;
+    background-position-y: 300px;
+    background-position-x: 50%;
 }
 
 footer {
+    position: relative;
     width: 100%;
     height: 120px;
     background-color: rgb(194, 194, 194);
-    z-index: 1 !important;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    z-index: 3 !important;
     margin: none;
     .foot-nav {
         background: none;
         .col-3 {
                 background-color: rgb(194, 194, 194);
+                cursor: pointer;
                 transition: 0.2s;
-                padding-left: 30px;
-                padding-right: 30px;
                 height: 60px;
                 line-height: 60px;
                 font-family: "Raleway", sans-serif;
+                overflow: clip;
+                text-align: center;
         }
         .col-3:hover {
                 background-color: gray;
@@ -300,6 +318,7 @@ footer {
 .imageBlock {
     width: 400px;
     box-shadow: 0px 0px 5px black, 0px 0px 5px black;
+    background: grey;
     border-radius: 5px;
     transition: 0.1s;
     .text-center {
@@ -341,6 +360,7 @@ footer {
 .imageBlock:hover {
     box-shadow: 0px 0px 10px black, 0px 0px 10px black;
     transition: 0.1s;
+    background: rgb(167, 167, 167);
     
     .picOne {
         background-position: center top;
