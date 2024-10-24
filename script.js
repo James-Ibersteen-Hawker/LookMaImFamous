@@ -2,6 +2,8 @@ window.onload = function startUp() {
   bigPic();
 };
 
+window.addEventListener("resize", bigPic());
+
 function bigPic() {
   let images = document.getElementsByClassName("main-image");
   let header = document.getElementsByTagName("HEADER")[0];

@@ -52,30 +52,30 @@
       <div class="mega-menu row m-0 p-0">
         <div
           class="col-6 col-md-2 text-center"
-          onclick="linker('#'); open_nav()"
+          onclick="linker('#early'); open_nav()"
         >
-          text
+          Early Life
         </div>
         <div
           class="col-6 col-md-2 text-center"
-          onclick="linker('#'); open_nav()"
+          onclick="linker('#later'); open_nav()"
         >
-          text
+          Later Life
         </div>
         <div class="d-none d-md-block col-4 text-center" onclick="open_nav()">
           Close
         </div>
         <div
           class="col-6 col-md-2 text-center"
-          onclick="linker('#'); open_nav()"
+          onclick="linker('#contributions'); open_nav()"
         >
-          text
+          Contributions
         </div>
         <div
           class="col-6 col-md-2 text-center"
-          onclick="linker('#'); open_nav()"
+          onclick="linker('#footer'); open_nav()"
         >
-          text
+          To Bottom
         </div>
         <div class="d-block d-md-none col-12 text-center" onclick="open_nav()">
           Close
@@ -101,15 +101,15 @@
         </div>
         <div class="title m-0">Count Ferdinand von Zeppelin</div>
         <div class="row m-0 p-0 body-main">
-          <div class="col-12 row p-3 m-0">
+          <div class="col-12 row p-3 m-0" id="early">
             <div class="col-12 px-3 justify">
               <div class="float-end d-none d-sm-block ms-3">
                 <div class="img-fluid floatpic picOne"></div>
                 <div class="w-100 d-block mx-auto text-center mt-2">
-                  Img Caption
+                  Count Zeppelin as pictured in the year
                 </div>
               </div>
-              <h1 class="minor-title w-100 text-center">Heading 1</h1>
+              <h1 class="minor-title w-100 text-center">Early Life</h1>
               Lorem ipsum odor amet, consectetuer adipiscing elit. Egestas
               pulvinar tortor sapien gravida sagittis. Elementum bibendum mauris
               in, placerat aptent rutrum tempus faucibus parturient. Cubilia
@@ -137,7 +137,7 @@
           <!--parallax 1 open-->
           <div class="parallax p1"></div>
           <!--parallax 1 close-->
-          <div class="col-12 row p-3 m-0">
+          <div class="col-12 row p-3 m-0" id="later">
             <div class="col-12 px-3 justify">
               <div class="float-start d-none d-sm-block me-3">
                 <div class="img-fluid floatpic picTwo"></div>
@@ -173,7 +173,7 @@
           <!--parallax 2 open-->
           <div class="parallax p2"></div>
           <!--parallax 2 close-->
-          <div class="col-12 row p-3 m-0">
+          <div class="col-12 row p-3 m-0" id="contributions">
             <div class="col-12 px-3 justify">
               <div class="float-end d-none d-sm-block ms-3">
                 <div class="img-fluid floatpic picThree"></div>
@@ -213,12 +213,18 @@
           <!--parallax 3 close-->
         </div>
       </main>
-      <footer class="row p-0 m-0">
+      <footer class="row p-0 m-0" id="footer">
         <div class="col-12 row p-0 m-0">
-          <div class="col-3 text-center" onclick="linker('#')">text</div>
-          <div class="col-3 text-center" onclick="linker('#')">text</div>
-          <div class="col-3 text-center" onclick="linker('#')">text</div>
-          <div class="col-3 text-center" onclick="linker('#')">text</div>
+          <div class="col-3 text-center" onclick="linker('#early')">
+            Early Life
+          </div>
+          <div class="col-3 text-center" onclick="linker('#later')">
+            Later Life
+          </div>
+          <div class="col-3 text-center" onclick="linker('#contributions')">
+            Contributions
+          </div>
+          <div class="col-3 text-center" onclick="linker('#')">To Top</div>
         </div>
         <div class="col-12 text-center">
           <div class="everything-else w-80 mx-auto">
