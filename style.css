@@ -137,9 +137,25 @@ header:hover {
         padding-right: 30px;
         height: 60px;
         line-height: 60px;
+        position: relative;
+    }
+    div::after {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        background: var(--border-gray);
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: 0.2s;
     }
     div:hover {
         background-color: gray;
+        transition: 0.2s;
+    }
+    div:hover:after {
+        width: 50%;
         transition: 0.2s;
     }
 }
